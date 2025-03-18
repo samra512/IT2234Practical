@@ -15,6 +15,7 @@ Quesion 04: target element
 ![image](https://github.com/user-attachments/assets/64d78d3c-7bc0-4500-b3f7-75f8596dbebe)
 
 Quesion 05: frequent element
+![image](https://github.com/user-attachments/assets/b98985d3-394b-4768-8656-27553c07503f)
 
 Quesion 06:array-operations
 ![image](https://github.com/user-attachments/assets/9c62de4a-2937-4af6-9798-818823d27ebf)
@@ -23,3 +24,4 @@ Quesions 07:JSON introduction
 ![image](https://github.com/user-attachments/assets/fa5850b1-1a2a-475e-b2ea-69919b701f59)
 
 Quesion 08:JSON Work
+![image](https://github.com/user-attachments/assets/a272c6d8-2268-440e-8804-e81548a8dce6)
