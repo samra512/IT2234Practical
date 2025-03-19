@@ -1,24 +1,27 @@
-Quesion 1:
-print "hello"
-![image](https://github.com/user-attachments/assets/61739405-f8c0-4a64-9488-676e336eef64)
+Quesion o1:array
 
-Quesion 2:
-aritmatic operations
-![image](https://github.com/user-attachments/assets/c0c7a22c-2def-48d7-8230-e178ec9c45a8)
+![image](https://github.com/user-attachments/assets/59a72d2a-ac5e-4e26-b438-5f023f8f79b5)
 
-Quesion 3:
-print numbers 1-10
-![image](https://github.com/user-attachments/assets/bd284266-6dc9-4019-967b-6ab24aa747d9)
+Quesion 02: Max array
+![image](https://github.com/user-attachments/assets/05662d6e-641f-4eb8-970f-69f3d384edd7)
 
-Quesion 4:
-print odd numbers
-![image](https://github.com/user-attachments/assets/a4a8c13a-893a-4ab0-834e-b622b1a87dcf)
+Quesion 03: Nested Array
+![image](https://github.com/user-attachments/assets/489bdb1e-0b13-4b86-8a1d-8ce6a7f9f0c5)
 
-Quesion 5:
-print reverse number
-![image](https://github.com/user-attachments/assets/7fc364e7-84d9-48bd-9f77-b4058e00b399)
+Quesion 04: Common element
+![image](https://github.com/user-attachments/assets/154a0a17-74ba-40ff-b41b-32f4b12f383b)
 
-Quesion 6:
-print numberset 432159876
-![image](https://github.com/user-attachments/assets/fc0d4808-15f4-445a-9634-201e34383cbc)
+Quesion 04: target element
+![image](https://github.com/user-attachments/assets/64d78d3c-7bc0-4500-b3f7-75f8596dbebe)
 
+Quesion 05: frequent element
+![image](https://github.com/user-attachments/assets/b98985d3-394b-4768-8656-27553c07503f)
+
+Quesion 06:array-operations
+![image](https://github.com/user-attachments/assets/9c62de4a-2937-4af6-9798-818823d27ebf)
+
+Quesions 07:JSON introduction
+![image](https://github.com/user-attachments/assets/fa5850b1-1a2a-475e-b2ea-69919b701f59)
+
+Quesion 08:JSON Work
+![image](https://github.com/user-attachments/assets/a272c6d8-2268-440e-8804-e81548a8dce6)
