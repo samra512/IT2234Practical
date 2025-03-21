@@ -1,27 +1,17 @@
-Quesion o1:array
+Quesion 01: Function 
+![image](https://github.com/user-attachments/assets/dacf1dc1-1d88-4d0d-8437-a0efbf8a4b74)
 
-![image](https://github.com/user-attachments/assets/59a72d2a-ac5e-4e26-b438-5f023f8f79b5)
+Quesion 02: Prime number
+![image](https://github.com/user-attachments/assets/ca72d24c-74e6-488f-8205-4aa49201b7f8)
 
-Quesion 02: Max array
-![image](https://github.com/user-attachments/assets/05662d6e-641f-4eb8-970f-69f3d384edd7)
+Quesion 03:Recursive number
+![image](https://github.com/user-attachments/assets/3d97d57f-d375-4d49-b979-3c7a5d9c7dac)
 
-Quesion 03: Nested Array
-![image](https://github.com/user-attachments/assets/489bdb1e-0b13-4b86-8a1d-8ce6a7f9f0c5)
+Quesion 04: arrow function
+![image](https://github.com/user-attachments/assets/88f4f2db-b875-454a-8ee7-c8c86994cf9e)
 
-Quesion 04: Common element
-![image](https://github.com/user-attachments/assets/154a0a17-74ba-40ff-b41b-32f4b12f383b)
+Quesion 05: Reset parameter
+![image](https://github.com/user-attachments/assets/bc62a07b-435b-46a0-bc01-9a707ba55096)
 
-Quesion 04: target element
-![image](https://github.com/user-attachments/assets/64d78d3c-7bc0-4500-b3f7-75f8596dbebe)
-
-Quesion 05: frequent element
-![image](https://github.com/user-attachments/assets/b98985d3-394b-4768-8656-27553c07503f)
-
-Quesion 06:array-operations
-![image](https://github.com/user-attachments/assets/9c62de4a-2937-4af6-9798-818823d27ebf)
-
-Quesions 07:JSON introduction
-![image](https://github.com/user-attachments/assets/fa5850b1-1a2a-475e-b2ea-69919b701f59)
-
-Quesion 08:JSON Work
-![image](https://github.com/user-attachments/assets/a272c6d8-2268-440e-8804-e81548a8dce6)
+Quesion 06: CallBack function
+![image](https://github.com/user-attachments/assets/dd8ef04d-d2f3-45eb-b878-2b1cb9d798d2)
