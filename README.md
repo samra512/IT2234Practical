@@ -1,17 +1,18 @@
-Quesion 01: Function 
-![image](https://github.com/user-attachments/assets/dacf1dc1-1d88-4d0d-8437-a0efbf8a4b74)
+Day-04 IT2234 Practical Day 04 - 20/03/2025
 
-Quesion 02: Prime number
-![image](https://github.com/user-attachments/assets/ca72d24c-74e6-488f-8205-4aa49201b7f8)
+INTRODUCTION TO NODE.JS
 
-Quesion 03:Recursive number
-![image](https://github.com/user-attachments/assets/3d97d57f-d375-4d49-b979-3c7a5d9c7dac)
+BASIC HTTP SERVER USING NODE.JS
 
-Quesion 04: arrow function
-![image](https://github.com/user-attachments/assets/88f4f2db-b875-454a-8ee7-c8c86994cf9e)
+1.. Run the server.js
+![image](https://github.com/user-attachments/assets/dd22bd4f-427d-47f4-a2d5-194830ffc929)
 
-Quesion 05: Reset parameter
-![image](https://github.com/user-attachments/assets/bc62a07b-435b-46a0-bc01-9a707ba55096)
+2..create a myapp folder
+3..In myapp cmd 
+![image](https://github.com/user-attachments/assets/c8438949-5e68-4e80-a6f7-f40240c42aeb)
+![image](https://github.com/user-attachments/assets/d12dd9b7-8a1f-4df6-a0fb-181dd054bfdd)
 
-Quesion 06: CallBack function
-![image](https://github.com/user-attachments/assets/dd8ef04d-d2f3-45eb-b878-2b1cb9d798d2)
+4..create a app.js
+5..run app.js
+![image](https://github.com/user-attachments/assets/10893ecd-dc98-45ec-a46f-67111eb1d23c)
+![image](https://github.com/user-attachments/assets/82612459-5058-4ad0-b541-81bc526ac349)
