@@ -1,18 +1,26 @@
-Day-04 IT2234 Practical Day 04 - 20/03/2025
+IT2234 Practical Day 05 - 24/03/2025
 
-INTRODUCTION TO NODE.JS
+Building RESTful APIs
 
-BASIC HTTP SERVER USING NODE.JS
+In this example, we create a RESTful API that manages a list of students. The API allows performing various actions such as retrieving all students, searching for a student by registration number, filtering students by gender, name, or course, etc.
 
-1.. Run the server.js
-![image](https://github.com/user-attachments/assets/dd22bd4f-427d-47f4-a2d5-194830ffc929)
+Explanation of Routes: GET /stu - Returns all the students in the database.
+![image](https://github.com/user-attachments/assets/51752508-8045-446d-9e96-bff981bcd574)
 
-2..create a myapp folder
-3..In myapp cmd 
-![image](https://github.com/user-attachments/assets/c8438949-5e68-4e80-a6f7-f40240c42aeb)
-![image](https://github.com/user-attachments/assets/d12dd9b7-8a1f-4df6-a0fb-181dd054bfdd)
+GET /stu/:id - Fetches the details of a student by their registration number. Returns a 404 error if the student is not found
+![image](https://github.com/user-attachments/assets/2e16cc53-26dd-4995-b757-0f99f2e6ec79)
 
-4..create a app.js
-5..run app.js
-![image](https://github.com/user-attachments/assets/10893ecd-dc98-45ec-a46f-67111eb1d23c)
-![image](https://github.com/user-attachments/assets/82612459-5058-4ad0-b541-81bc526ac349)
+GET /gender/:gen - Filters and returns students based on their gender. image
+![image](https://github.com/user-attachments/assets/354c2893-0d11-4efc-9bec-013e7abc6037)
+
+GET /name/:name - Filters and returns students based on their name. image
+![image](https://github.com/user-attachments/assets/5c187859-8320-41a7-b0f8-a0a265f68b5b)
+
+
+Testing: To test this API, you can use Postman:
+
+Send a GET request to 127.0.0.1:3001/stu to see all students.
+
+Send a GET request to 127.0.0.1:3001/stu/{id} (replace {id} with an actual registration number) to see a specific student.
+
+Send GET requests to 127.0.0.1:3001/gender/{gen}, 127.0.0.1:3001/name/{name}, or 127.0.0.1:3001/course/{course} to filter students based on gender, name, or course.
