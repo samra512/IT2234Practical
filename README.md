@@ -2,7 +2,7 @@ IT2234 Practical Day 05 - 24/03/2025
 
 Building RESTful APIs
 
-In this example, we create a RESTful API that manages a list of students. The API allows performing various actions such as retrieving all students, searching for a student by registration number, filtering students by gender, name, or course, etc.
+In this example, We create a RESTful API that manages a list of students. The API allows performing various actions such as retrieving all students, searching for a student by registration number, filtering students by gender, name, or course, etc.
 
 Explanation of Routes: GET /stu - Returns all the students in the database.
 ![image](https://github.com/user-attachments/assets/51752508-8045-446d-9e96-bff981bcd574)
