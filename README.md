@@ -1,30 +1,18 @@
+IT2234 Practical ICAE 01 - 27/03/2025
+
+Question 01
+
+![image](https://github.com/user-attachments/assets/ff61006e-888c-4b07-8e5b-6d2f13635871)
+
+Question 02
+
+![image](https://github.com/user-attachments/assets/79926637-6ac9-4052-9edb-3e8510d8577f)
+
+Question 03
+![image](https://github.com/user-attachments/assets/1de11886-3af7-4aa0-8d13-91e128337431)
 
 
-=======
-IT2234 Practical Day 05 - 24/03/2025
+Question 04
+![image](https://github.com/user-attachments/assets/0e1c785e-46c4-47b5-b253-5e43ac6726fc)
 
-Building RESTful APIs
-
-In this example, We create a RESTful API that manages a list of students. The API allows performing various actions such as retrieving all students, searching for a student by registration number, filtering students by gender, name, or course, etc.
-
-Explanation of Routes: GET /stu - Returns all the students in the database.
-![image](https://github.com/user-attachments/assets/51752508-8045-446d-9e96-bff981bcd574)
-
-GET /stu/:id - Fetches the details of a student by their registration number. Returns a 404 error if the student is not found
-![image](https://github.com/user-attachments/assets/2e16cc53-26dd-4995-b757-0f99f2e6ec79)
-
-GET /gender/:gen - Filters and returns students based on their gender. image
-![image](https://github.com/user-attachments/assets/354c2893-0d11-4efc-9bec-013e7abc6037)
-
-GET /name/:name - Filters and returns students based on their name. image
-![image](https://github.com/user-attachments/assets/5c187859-8320-41a7-b0f8-a0a265f68b5b)
-
-
-Testing: To test this API, you can use Postman:
-
-Send a GET request to 127.0.0.1:3001/stu to see all students.
-
-Send a GET request to 127.0.0.1:3001/stu/{id} (replace {id} with an actual registration number) to see a specific student.
-
-Send GET requests to 127.0.0.1:3001/gender/{gen}, 127.0.0.1:3001/name/{name}, or 127.0.0.1:3001/course/{course} to filter students based on gender, name, or course.
 
