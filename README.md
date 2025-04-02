@@ -13,5 +13,6 @@ Question 03
 
 
 Question 04
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0e1c785e-46c4-47b5-b253-5e43ac6726fc)
+
 
