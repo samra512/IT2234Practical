@@ -1,92 +1,53 @@
-Practical Day -06
-Asynchronous programming 
-----------------------------
-* asynchronous means that a program does not wait for a task to complete before moving on to the 
-   next one
+1.Index.js-The Entry Point
+---------------
+This file acts as the main "door" to your application. It:
 
-* const fs = require('fs') -This line imports the fs (File System) module in Node.js.
-      The fs module allows you to interact with the file system, such as reading or writing files.
+Purpose:
+This is where your application starts. Any client (like Postman or a browser) interacts with this file first when making requests.
 
-* fs.readFile('file.txt', 'utf8', (err, data) => {
-    fs.readFile() is used to read the contents of the file file.txt.
-    The first argument 'file.txt' is the file name (it must be present in the same directory, or 
-    you need to provide the full path).
+2.studentrouter.js -The Router
+-------------------
+This file handles specific routes (URLs) related to "students". It:
 
-    The second argument 'utf8' ensures that the file is read as a text file (otherwise, it would 
-    return a raw buffer).
+Purpose:
+This organizes the routes for your application in a clean, modular way. It acts as the "traffic controller," deciding which function to call based on the request.
 
-    The third argument is a callback function (err, data) => {} that will execute once the file r     eading is completed.
+3.studentservice - The Data Handler
+-----------------------------------------
+This file contains the business logic. It:
 
-  How It Works
-  -------------
-  1. fs readFile('file.txt','utf8',callback)
-     -Read file.txt asynchronously in UTF-8 encoding
-     -Takes a callback function that execute when the file read is complete
-   2. CallBack Function((err,data)=>{....})
-      -If there an error it prints an error message
-      -If successful it prints the file content
-  3.  console.log("File reading is done")
-    - This executes before the file content is printed bczfile reading is asynchronous
+Purpose:
+This file handles all the logic for retrieving and manipulating the student data. It keeps the data-related logic separate, making your app more organized and easier to maintain.
 
-      ![image](https://github.com/user-attachments/assets/9ca1f57c-41b5-4dbf-bf59-902836986d28)
+4.studentdb.js- The Data Store
+ --------------------------------
+This is where the student data is stored as an array of objects. Each object represents a student with details like , , , , and .
+Purpose:
+This acts as your app's "database" (for now, it's just a file with sample data).
 
+How They Work Together:
+---------------------------
+  1.when the client makes a request (ex:GET/student) the server in index.js receive it
+  
+  2. The request is passed to studentroute.js which check the route and determine what action to 
+    take
 
-2. Prmosies
----------------------
-* A Promise is a  object that represents an operation that will complte in the future.
-* Normally, fs.readFile() uses callbacks, but fs.promises provides Promise-based file operations.
-  Now, fs.readFile() returns a Promise, which can be handled using .then() and .catch().
+  3. studentroute.js call the appropriate function in studentservice.js to fetch the data
+     
+  4.studentservice.js retrieve the data from studentdb.js and return it to studentroute.js
+  
+  5.studentroute.js send the data back to the client as a response
 
-*A Promise has 3 possible states:
- 1. Pending /waiting - The operation is still in progress.
- 2. Resolved / Fulfill - The operation was successful, and we have a result.
- 3. Rejected /error - The operation failed, and we have an error.
-
-*How IT Work
+  
+output:
 -------------
-fs.readFile() returns a Promise.
-If the file is read successfully, .then() prints the content.
-If an error occurs (e.g., file not found), .catch() handles the error.
+To retrieve all students data: localhost:3001/student
+![image](https://github.com/user-attachments/assets/bd23408d-7f3e-438a-bf86-a48ea1121aff)
 
-![image](https://github.com/user-attachments/assets/7dc4b73e-c4a5-4bea-aa6f-186483356226)
-
-
-3.Async/await
-----------------
-* async function: Declares a function that returns a Promise.
-* await keyword: Waits for the Promise to resolve before moving to the next line.
-How It Work
-------------
-1. fs.readfile() return a promise
-2. await waits for the file to be read before moving forward
-3. The try ....catch block handles errors
-
-   Promise.allSettled
-   ----------------------
-   It waits for all promises to complete(either fulfilled or rejected
-   It does not stop if one promise fails
-
-   How It work
-   --------------
-   1. Both fs.readFile('file.txt') and fs.readFile('data.txt') start running at the same time
-   2. Promise.allsettled() waits for both to finish
-   3. It return an array with:
-      {status: "fulfilled", value: "file content"} if successful
-      {status:"rejected", reason:Error } if failed
-   4.The program does not stop if one operation fails
-
- ![image](https://github.com/user-attachments/assets/f6cc1d95-320f-4959-ab29-b1b6b7b59ffe)
-
-      
+To retrieve students data (ByGender): localhost:3001/student/gender/Male
+![image](https://github.com/user-attachments/assets/e702f044-ba72-4f39-8e85-36d6d58c961a)
 
 
-
-
-
-
-
-
-
-
-
+To retrieve students data (ById): localhost:3001/student/id
+![image](https://github.com/user-attachments/assets/e1802d9c-78de-465e-b690-09f53e8a916e)
 
