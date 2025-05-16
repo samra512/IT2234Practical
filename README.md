@@ -20,6 +20,8 @@ collections.
 
 6. Find how many students followed the subject “Mathematics”.
 . ![Screenshot 2025-05-16 064259](https://github.com/user-attachments/assets/fb9ae670-800e-430b-ac38-efe409203112)
+![image](https://github.com/user-attachments/assets/0cb6910b-59cc-4186-8c02-3bec2f3addc4)
 
-7. Find all students with grades in the term "Fall 2022".
-   ![Uploading image.png…]()
+
+8. Find all students with grades in the term "Fall 2022".
+![Screenshot 2025-05-16 115747](https://github.com/user-attachments/assets/78c2e4db-b968-409d-a5a1-f2d2c48fe9a6)
