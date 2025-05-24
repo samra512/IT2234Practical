@@ -1,11 +1,11 @@
 const express=require('express')
 const router=express.Router()
-const Course=require('../models/Course')
+const Degree=require('../models/Degree')
 const { default: mongoose } = require('mongoose')
 
 router.get('/',async (req,res)=>{
     try{
-        const results = await Course.find()
+        const results = await Degree.find()
         if (results) {
             res.status(200).json(results)
         }else{
@@ -16,7 +16,7 @@ router.get('/',async (req,res)=>{
         res.status(500).send("Server error")
     }
 })
-
+/*
 router.get('/:id',async (req,res)=>{
     try{
         const id=req.params.id
@@ -32,46 +32,49 @@ router.get('/:id',async (req,res)=>{
     }
 })
 
-router.get('/code/:cid', async (req, res) => { // Corrected route path
-    try {
-        const cid = req.params.cid;
-        const results = await Course.find({ code: cid });
 
-        if (!results.length) {  // Improved null check
-            return res.status(404).send("Sorry, No data found");
+router.get('code/:cid',async (req,res)=>{
+    try{
+        const id=req.params.cid
+        const results = await Course.find({code:cid})
+        if (results == null) {
+            res.status(200).json(results)
+        }else{
+            res.status(404).send("Sorry, No data found")
         }
-        
-        res.status(200).json(results);
-    } catch (error) {
+    }catch(error){
         console.error(error);
-        res.status(500).send("Server error");
+        res.status(500).send("Server error")
     }
-});
-
-// Corrected PUT route
-router.put('/course/:id', async (req, res) => {
-    try {
-        const id = req.params.id;
-
-        if (!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(400).send("Invalid ID!");
-        }
-
-        const updatedCourse = await Course.findByIdAndUpdate(id, req.body, { new: true }); // Corrected update method
-
-        if (!updatedCourse) {
-            return res.status(404).send("Course not found!");
-        }
-
-        res.status(200).json(updatedCourse);
-    } catch (error) {
-        console.error(error);
-        res.status(500).send("Server error");
-    }
-});
+})
 
 router.post('/',async (req,res)=>{
     try{
+        const {code,name,credits,descriptions}=req.body
+    
+         if(!code || !name || !credits){
+            res.status(400).send("Please provide the required fields!")
+
+         }else{
+            const results = await Course.create({code,name,credits,descriptions})
+            res.status(200).json(results)
+
+         }
+
+    }catch(error){
+        console.error(error);
+        res.status(500).send("Server error")
+    }
+})
+
+router.put('/:id',async (req,res)=>{
+    try{
+        const id=req.params.id
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).send("Invalid ID!")
+        }
+
+        const ucourse=await Course.findById(id)
         const {code,name,credits,descriptions}=req.body
     
          if(!code || !name || !credits){
@@ -108,4 +111,5 @@ router.delete('/:id',async (req,res)=>{
         res.status(500).send("Server error")
     }
 })
+    */
 module.exports=router
