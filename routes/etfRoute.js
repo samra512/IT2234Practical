@@ -18,4 +18,14 @@ router.get('/',async(req,res)=>{
     }
 })
 
+router.post('/Etf', async (req, res) => {
+  try {
+    const result = await Etf.insertMany(req.body);
+    res.status(201).json({ message: 'Etf inserted', result });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
 module.exports=router

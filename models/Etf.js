@@ -1,19 +1,22 @@
 const mongoose=require('mongoose')
 const etfSchema = new mongoose.Schema({
-      employeeID: { type: mongoose.Schema.Types.String, ref: 'Employee', required: true ,unique: true }, // Unique ensures only one ETF per Employee
-    monthlyContribution: { type: Number, min: 0 }, 
-    totalContribution: { type: Number, min: 0 }, 
-    lastUpdated: { type: Date, default: Date.now } 
-});
-const Etf=mongoose.model('Etf',etfSchema) 
-/*
-const newETF = new Etf({
-    employeeID: 'EMP1001', // Employee ID reference
-    monthlyContribution: 5000, 
-    totalContribution: 60000, 
-    lastUpdated: new Date() 
+    _id: { type: String, required: true },
+    employeeID: { type: Number, ref: 'Employee', unique: true },
+    contribution: { type: Number, required: true }
 });
 
-newETF.save()
+const Etf = mongoose.model('etf', etfSchema);
+/*
+const etfs = [
+    { _id: "E1", employeeID: 1, contribution: 5000 },
+    { _id: "E2", employeeID: 2, contribution: 4500 },
+    { _id: "E3", employeeID: 3, contribution: 5500 },
+    { _id: "E4", employeeID: 4, contribution: 6000 },
+    { _id: "E5", employeeID: 5, contribution: 5200 }
+];
+
+Etf.insertMany(etfs);
+
 */
+
 module.exports=Etf

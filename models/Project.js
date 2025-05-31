@@ -1,21 +1,22 @@
 const mongoose=require('mongoose')
 const projectSchema = new mongoose.Schema({
-     _id: { type: String, required: true }, // Project ID
+    _id: { type: String, required: true },
     name: { type: String, required: true },
-    deadline: { type: Date },
-    budget: { type: Number, min: 0 },
-    employees: [{ type: mongoose.Schema.Types.String, ref: 'Employee' }]
-});
-const Project=mongoose.model('Project',projectSchema) // to models name
-/*
-const projectDetails=new Project({
-     _id: 'P001',
-    name: 'AI Development',
-    deadline: new Date('2025-12-31'), // Example deadline
-    budget: 100000, // Budget in currency units
-    employees: ['EMP1001', 'EMP1002', 'EMP1003']
-})
+    employeeID: [{ type: Number, ref: 'Employee' }],
 
-projectDetails.save()
+});
+
+const Project = mongoose.model('Project', projectSchema);
+/*
+const projects = [
+    { _id: "P1", name: "Alpha", employeeID: [1, 3] },
+    { _id: "P2", name: "Beta", employeeID: [2] },
+    { _id: "P3", name: "Gamma", employeeID: [4, 5] },
+    { _id: "P4", name: "Delta", employeeID: [1, 2, 5] },
+    { _id: "P5", name: "Epsilon", employeeID: [3, 4] }
+];
+
+Project.insertMany(projects);
+
 */
 module.exports=Project
